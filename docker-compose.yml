@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    image: node:12-alpine
+    command: sh -c "yarn install && yarn start"
+    #command: sh -c "yarn create react-app dictionary"
+    ports:
+      - 3000:3000
+    working_dir: /ui
+    volumes:
+      - ./ui:/ui:consistent
+    stdin_open: true
+
