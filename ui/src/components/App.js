@@ -8,7 +8,7 @@ class App extends Component {
     <div className="App">
       <header className="App-header">
           <SearchBox
-          passValue="this is a test"
+          initialText="Welcome!"
           />
         <p>
           Edit <code>src/App.js</code> and save to reload.
