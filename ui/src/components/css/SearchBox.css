@@ -1,5 +1,13 @@
 .SearchButton {
-        width: 1000px;
-        height: 100px;
-        background-color: #4CAF50; /* Green */
+    background-color: #882C34; /* dark red variant */
+    border: 1px solid white;
+    color: white;
+    /*width: 25%;
+    height: 50%;*/
+    padding: 1px 32px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32x;
 }
