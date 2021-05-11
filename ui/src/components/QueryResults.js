@@ -5,40 +5,22 @@ import './css/Buttons.css';
 class QueryResult extends Component { 
     state = {
         list: ["","", "", "", ""],
-        tmpDataBase: ["apple","orange", "kiwi", "blood-orange", "crab-apple"],
+        tmpDataBase: ["apple","orange", "kiwi", "blood-orange", "crab-apple", "PINEAPPLE"],
     }
     topResults(searchTerm){
         return "test";
     }
     render(){
         return(
-            <div className="App">
-                <div className="ResultButton">
-                    <p>
-                        { this.state.tmpDataBase[0] }
-                    </p>
-                </div>
-                <div className="ResultButton">
-                    <p>
-                        { this.state.tmpDataBase[1] }
-                    </p>
-                </div>
-                <div className="ResultButton">
-                    <p>
-                        { this.state.tmpDataBase[2] }
-                    </p>
-                </div>
-                <div className="ResultButton">
-                    <p>
-                        { this.state.tmpDataBase[3] }
-                    </p>
-                </div>
-                <div className="ResultButton">
-                    <p>
-                        { this.state.tmpDataBase[4] }
-                    </p>
-                </div>
-            </div>
+            <dl className="ResultButton">
+                { this.state.tmpDataBase.map((head_word) => (
+                    <dt key={head_word}>
+                        <p>
+                            {head_word}
+                        </p>
+                    </dt>
+                )) }
+            </dl>
         )
     }
 }
