@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import './css/Buttons.css';
-import QueryResults from './QueryResults'
+import ListResults from './ListResults'
 
 class SearchBox extends Component {
     state = {
@@ -36,7 +36,7 @@ class SearchBox extends Component {
                     <p>
                         {this.state.tmpWord}
                     </p>
-                    <QueryResults
+                    <ListResults
                     />
                 </div>
             </div>

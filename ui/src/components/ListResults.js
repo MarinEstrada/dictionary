@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import './css/Buttons.css';
 
-class QueryResult extends Component { 
+class ListResults extends Component { 
     state = {
         list: ["","", "", "", ""],
         tmpDataBase: ["apple","orange", "kiwi", "blood-orange", "crab-apple", "PINEAPPLE"],
@@ -25,4 +25,4 @@ class QueryResult extends Component {
     }
 }
 
-export default QueryResult; 
+export default ListResults; 
