@@ -7,6 +7,7 @@ class SearchBox extends Component {
     state = {
         textValue: this.props.initialText,
         tmpWord: "",
+        current_list:[],
     }
     handleTextChange(newText){
         this.setState(state => ({
@@ -17,7 +18,7 @@ class SearchBox extends Component {
     search(text){
         this.setState(state => ({
             ...state,
-            tmpWord: text/*QueryResult.topresults(this.state.tmpWord)*/
+            current_list: ["apple","orange", "kiwi", "blood-orange", "crab-apple", "PINEAPPLE"],
         }))
     }
     render(){
@@ -33,10 +34,8 @@ class SearchBox extends Component {
                             I'm a button
                         </p>
                     </div>
-                    <p>
-                        {this.state.tmpWord}
-                    </p>
                     <ListResults
+                        to_list={this.state.current_list}
                     />
                 </div>
             </div>
