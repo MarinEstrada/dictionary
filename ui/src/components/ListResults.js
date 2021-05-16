@@ -7,9 +7,9 @@ class ListResults extends Component {
         return(
             <dl className="ResultButton">
                 { this.props.to_list.map((head_word) => (
-                    <dt key={head_word}>
+                    <dt key={head_word.word}>
                         <p>
-                            {head_word}
+                            {head_word.word}
                         </p>
                     </dt>
                 )) }
