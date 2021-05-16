@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import './css/Buttons.css';
 import ListResults from './ListResults'
+import { queryResults } from '../tmp_backend/current_query_results'
 
 class SearchBox extends Component {
     state = {
@@ -16,9 +17,10 @@ class SearchBox extends Component {
         }))
     }
     search(text){
+        let this_list = queryResults(text)
         this.setState(state => ({
             ...state,
-            current_list: ["apple","orange", "kiwi", "blood-orange", "crab-apple", "PINEAPPLE"],
+            current_list: this_list, 
         }))
     }
     render(){
