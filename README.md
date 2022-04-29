@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Dictionary inteded to be a multi-lingual dictionarly
+
 ## How to run this Dictionary project locally
 
 This project is inteded to be developed with docker.
